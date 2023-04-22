@@ -25,20 +25,20 @@
         </div>
       </section>
       <h3>Todo</h3>
-      <ul id="incompleteTasks">
-        <li>
-          <input type="checkbox" >
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task">
+      <ul id="incompleteTasks" class="tasks-section zero-indents">
+        <li class="tasks-section__item">
+          <input class="tasks-section__check-box" type="checkbox" >
+          <label class="tasks-section__label task">Pay Bills</label>
+          <input class="tasks-section__input task" type="text">
           <button class="button edit">Edit</button>
           <button class="button delete ">
             <img src="./remove.svg" alt="remove">
           </button>
         </li>
-        <li class="editMode">
-          <input type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
+        <li class="current-tasks-section__item edit-mode">
+          <input class="tasks-section__check-box" type="checkbox">
+          <label class="tasks-section__label task">Go Shopping</label>
+          <input class="tasks-section__input task" type="text" value="Go Shopping" >
           <button class="button edit">Save</button>
           <button class="button delete">
             <img src="./remove.svg" alt="remove">
@@ -46,11 +46,11 @@
         </li>
       </ul>
       <h3>Completed</h3>
-      <ul id="completed-tasks">
+      <ul id="completed-tasks" class="tasks-section zero-indents">
         <li>
-          <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task">
+          <input class="tasks-section__check-box" type="checkbox" checked>
+          <label class="tasks-section__label complited task">See the Doctor</label>
+          <input class="tasks-section__input task" type="text" >
           <button class="button edit">Edit</button>
           <button class="button delete">
             <img src="./remove.svg" alt="remove">
