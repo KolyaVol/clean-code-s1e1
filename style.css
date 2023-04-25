@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
 	background-color: #f8f8f8;
 	color: #333;
 	font-family: Lato, sans-serif;
@@ -8,6 +8,7 @@ body {
 	width: 500px;
 	margin: 0 auto;
 	display: block;
+	
 	text-align: right;
 }
 .header__img {
