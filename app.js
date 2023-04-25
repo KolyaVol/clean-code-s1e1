@@ -48,6 +48,7 @@ var createNewTaskElement=function(taskString){
     deleteButton.className="button delete ol-none";
     deleteButtonImg.src="./remove.svg";
     deleteButtonImg.className="tasks-section__img";
+    deleteButton.setAttribute("alt", "remove");
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -158,9 +159,9 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
-    var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.edit");
-    var deleteButton=taskListItem.querySelector("button.delete");
+    var checkBox=taskListItem.querySelector(".tasks-section__check-box");
+    var editButton=taskListItem.querySelector(".button.edit");
+    var deleteButton=taskListItem.querySelector(".button.delete");
 
 
     //Bind editTask to edit button.
